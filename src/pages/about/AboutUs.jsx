@@ -21,7 +21,8 @@ import { Link } from 'react-router'
 
 const AboutUs = () => {
   return (
-    <div>
+    <div className='bg-gray-200'>
+        
         <div className='flex justify-between'>
         <div className="flex mt-5 gap-1 ml-5 ">
                     <Book/>
@@ -40,7 +41,8 @@ const AboutUs = () => {
             </nav>
         </div>
         </div>
-        <div className='border mt-2'></div>
+        <div className='border mt-2 border-gray-300'></div>
+        <div className='border mt-14 w-[95%] ml-7 rounded-lg border-white bg-white '>
         <div>
             <h1 className='text-center text-4xl  mt-8 font-poppins font-bold sm:text-4xl'>About Our ReportCard Management System</h1>
             <p className='text-center mt-5 tracking-wide font-poppins'>Welcome to the New Vision Comprehensive College Report Card Management System. <br />  Our system is designed to streamline the process of managing and distributing  students <br /> report cards, ensuring accuracy, efficiency, and accessibility by all stakeholders. 
@@ -107,10 +109,14 @@ const AboutUs = () => {
             <img src={image4} alt="" className='ml-32 mt-8' />
         </div>
 
+       
+         
+        </div>
         <div>
         <p className='text-center mt-24 text-gray-600 mb-5'>@2025 New Vision Comprehensive College. All rights reserved.</p>
+        <p className='text-gray-200'>hello</p>
       </div>
-         
+       
 
     </div>
   )

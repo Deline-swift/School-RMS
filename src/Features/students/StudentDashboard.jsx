@@ -1,8 +1,8 @@
 import React from 'react'
-import { House , MonitorPlay,Calendar1,File,Bell,Book} from 'lucide-react'
 import { useState, useEffect } from 'react'
 import StudentProgressList from './StudentProgressList';
 import StudentProgressBar from './StudentProgressBar';
+import StudentLineGraph from '../../components/graph/StudentLineGraph';
 
 const StudentDashboard = ({average,name,max=20}) => {
     const trendValue = Math.round((average/max)*100);
@@ -59,9 +59,14 @@ const StudentDashboard = ({average,name,max=20}) => {
             <div className='mt-5 ml-5 font-bold font-poppins tracking-wide'>
                 <h1>Grade Trend</h1>
                 <div>
-               
-      </div>
                 <p>{trendValue}</p>
+      </div>
+      <StudentLineGraph/>
+      <div>
+        <h1 className='text-xl font-bold font-poppins mt-2'>Recent Announcements</h1>
+      </div>
+              
+                
                 
             </div>
         </div>

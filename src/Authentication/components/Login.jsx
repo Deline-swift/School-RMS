@@ -15,7 +15,7 @@ const Login = () => {
         <h1>Welcome Back To New Vision Comprehensive College</h1>
       </div>
       <form action="submit">
-      <div className='flex justify-evenly'>
+      <div className='flex justify-evenly flex-col lg:flex-row'>
        <img src={image} alt="" className='w-[500px] h-[600px] mt-7 ml-3 rounded-lg' />
        <div className='ml-3 mt-32'>
        <div>

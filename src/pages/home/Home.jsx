@@ -1,11 +1,13 @@
 import { Book,
       Users,
       File,
-      ShieldCheck
+      ShieldCheck,
+      Tv,
+      Lock,
 
 } from 'lucide-react'
 import React from 'react'
-import image from '../../assets/images/image8.jpg'
+import image from  "../../assets/images/image15.jpg"
 import { Link } from 'react-router'
 
 
@@ -42,24 +44,54 @@ const Home = () => {
         <p className='mt-3 ml-40 font-poppins text-gray-600 '>Our system offers a range of features to streamline report card management.</p>
       </div>
       <div className='flex gap-8'>
-          <div className='border w-[26%] ml-40 mt-10 h-40 rounded-lg'>
+          <div className='border w-[26%] ml-40 mt-10 h-40 rounded-lg  transform transition duration-300 
+                hover:scale-105 hover:-translate-y-2'>
             <Users className='ml-3 mt-8'/>
             <h1 className='ml-3 mt-2 text-gray-600 font-bold font-poppins'>Users Roles</h1>
             <p className='ml-3 text-gray-600 font-poppins text-md'>Different users roles for administartors, teachers and students</p>
           </div>
-          <div className='border w-[26%]  mt-10 h-40 rounded-lg'>
+          <div className='border w-[26%]  mt-10 h-40 rounded-lg  transform transition duration-300 
+                hover:scale-105 hover:-translate-y-2'>
             <File className='ml-3 mt-8'/>
             <h1 className='ml-3 mt-2 text-gray-600 font-bold font-poppins'>Report Card Access</h1>
             <p className='ml-3 text-gray-600 font-poppins text-md'>Easy access to students report cards</p>
           </div>
-          <div className='border w-[25%]  mt-10 h-40 rounded-lg'>
+          <div className='border w-[22%]  mt-10 h-40 rounded-lg  transform transition duration-300 
+                hover:scale-105 hover:-translate-y-2'>
           <ShieldCheck className='ml-3 mt-8' />
           <h1 className='ml-3 mt-2 text-gray-600 font-bold font-poppins'>Security</h1>
           <p className='ml-3 text-gray-600 font-poppins text-md'>Secure access to sensitive information</p>
           </div>
       </div>
+      <div className='w-[80%] ml-[110px] mt-12 '>
+        <img src={image} alt="" className='rounded-lg' />
+      </div>
       <div>
-        <p className='text-center mt-24 text-gray-600 mb-5'>@2025 New Vision Comprehensive College. All rights reserved.</p>
+        <h1 className='mt-12 ml-40 text-4xl font-poppins font-bold'>Benefits</h1>
+      </div>
+      <div className='flex gap-8'>
+          <div className='border w-[26%] ml-40 mt-10 h-40 rounded-lg  transform transition duration-300 
+                hover:scale-105 hover:-translate-y-2'>
+            <Tv className='ml-3 mt-4'/>
+            <h1 className='ml-3 mt-2 text-gray-600 font-bold font-poppins'>Comprehensive Reporting</h1>
+            <p className='ml-3 text-gray-600 font-poppins text-md mt-1'>Generate detailed and insightful reportcards with ease </p>
+          </div>
+          <div className='border w-[26%]  mt-10 h-40 rounded-lg  transform transition duration-300 
+                hover:scale-105 hover:-translate-y-2'>
+            <Users className='ml-3 mt-4'/>
+            <h1 className='ml-3 mt-2 text-gray-600 font-bold font-poppins'>User-Friendly Interface</h1>
+            <p className='ml-3 text-gray-600 font-poppins text-md mt-1'>Intuitive design for seamless navigation and use</p>
+          </div>
+          <div className='border w-[23%]  mt-10 h-40 rounded-lg  transform transition duration-300 
+                hover:scale-105 hover:-translate-y-2'>
+          <Lock className='ml-3 mt-4' />
+          <h1 className='ml-3 mt-2 text-gray-600 font-bold font-poppins'>Secure Access</h1>
+          <p className='ml-3 text-gray-600 font-poppins text-md mt-1'>Ensure data privacy and security with role-based access control</p>
+          </div>
+
+      </div>
+      <div>
+        <p className='text-center mt-20 text-gray-600 mb-5'>@2025 New Vision Comprehensive College. All rights reserved.</p>
       </div>
     </div>
   )
